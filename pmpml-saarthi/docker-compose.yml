@@ -1,0 +1,21 @@
+# docker-compose.yml — Runs the FastAPI backend in Docker (optional)
+#
+# Usage:
+#   docker-compose up --build
+#
+# The backend will be available at http://localhost:8000
+
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./firebase:/app/firebase:ro   # mount credentials if present
+    restart: unless-stopped

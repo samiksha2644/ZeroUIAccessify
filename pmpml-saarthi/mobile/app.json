@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "PMPML Saarthi",
+    "slug": "pmpml-saarthi",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "backgroundColor": "#000000",
+    "splash": {
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "PMPML Saarthi needs microphone access so you can speak your destination.",
+        "NSLocationWhenInUseUsageDescription": "PMPML Saarthi needs your location to find the nearest bus stop."
+      }
+    },
+    "android": {
+      "permissions": [
+        "RECORD_AUDIO",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        { "locationWhenInUsePermission": "PMPML Saarthi uses your location to find the nearest bus stop and track your ride." }
+      ]
+    ]
+  }
+}
