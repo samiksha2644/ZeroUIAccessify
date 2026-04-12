@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMPML Saarthi - Voice-First Transit Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <main class="glass-container">
+        <header>
+            <h1>PMPML Saarthi 🚌🗣️</h1>
+            <p>Your Voice-First Pune Transit Assistant</p>
+        </header>
+
+        <section class="input-section">
+            <div class="input-group">
+                <input type="text" id="destinationInput" placeholder="Where would you like to go?" autocomplete="off" />
+                <button id="micBtn" class="icon-btn" aria-label="Use Microphone" title="Click to speak">
+                    🎙️
+                </button>
+            </div>
+            <button id="goBtn" class="primary-btn">Find Route</button>
+            <p id="statusMsg" class="status-msg"></p>
+        </section>
+
+        <section id="resultsSection" class="results-section hidden">
+            <div class="route-card">
+                <h2>Route Details</h2>
+                <div class="route-details">
+                    <div class="detail-item">
+                        <span class="label">Board Bus</span>
+                        <span class="value" id="routeNameVal">--</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">ETA</span>
+                        <span class="value highlight" id="etaVal">-- min</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Nearest Stop</span>
+                        <span class="value" id="nearestStopVal">--</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Destination Stop</span>
+                        <span class="value" id="destStopVal">--</span>
+                    </div>
+                </div>
+                <div class="speech-box">
+                    <p id="speechVal">"..."</p>
+                    <button id="playSpeechBtn" class="icon-btn xs" title="Play Audio">🔊</button>
+                </div>
+                <!-- Optional Start Ride Action if we were to build Ride Screen too -->
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
