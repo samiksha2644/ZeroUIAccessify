@@ -200,6 +200,6 @@ Make sure your mobile app points to your local machine IP (e.g., `http://192.168
 
 | Name | Role | Contact |
 |------|------|---------|
-| First Last | Backend Engineer | email@example.com |
-| First Last | Frontend Engineer | email@example.com |
-| First Last | Product/Design | email@example.com |
+| Pranav Shirode | Backend Engineer | pranav.shirode24@gmail.com |
+| Samiksha Mote | Frontend Engineer, App Dev | samiksha.mote24@pccoepune.com |
+| Tanvi Chavan | Product/Design | - |
