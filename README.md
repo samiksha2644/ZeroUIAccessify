@@ -45,8 +45,8 @@ TransitVoice is an audio-only public transit assistant designed for visually imp
 5. Environment Setup
 ```bash
 # Clone the repository
-git clone <repository_url>
-cd <repository_folder>/backend
+git clone https://github.com/samiksha2644/ZeroUIAccessify/.git
+cd ZeroUIAccessify/backend
 
 # Create and activate Python virtual environment
 python -m venv venv
